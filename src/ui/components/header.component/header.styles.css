@@ -1,0 +1,10 @@
+div.header {
+    font-family: Poppins;
+    color: var(--black-800);
+
+    padding: 50px 130px;
+}
+
+div.header .text-red {
+    color: var(--red-800);
+}

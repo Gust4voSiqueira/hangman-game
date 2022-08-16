@@ -1,0 +1,50 @@
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 130px;
+}
+
+.palavra-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 50%;
+}
+
+.palavra-container h1.dica {
+    display: block;
+    font-family: Poppins;
+    color: var(--black-800);
+}
+
+.palavra-container span, label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+    font-family: Poppins;
+    color: var(--black-800);
+}
+
+.palavra-container label input {
+    border-bottom: 1px solid var(--black-800);
+    width: 40px;
+    height: 30px;
+    margin-left: 5px;
+
+    font-family: Poppins;
+    color: var(--black-800);
+    text-align: center;
+}
+
+.palavra-container input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.palavra-container li {
+    list-style: none;
+}

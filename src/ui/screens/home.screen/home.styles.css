@@ -1,0 +1,26 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 50px 130px;
+}
+
+.home-container img {
+    width: 300px;
+}
+
+.home-container .como-jogar-container {
+    max-width: 50%;
+}
+
+.home-container .como-jogar-container h1 {
+    font-family: Poppins;
+
+}
+
+.home-container .como-jogar-container p {
+    font-family: Inter;
+    line-height: 30px;
+    margin-top: 30px;
+}

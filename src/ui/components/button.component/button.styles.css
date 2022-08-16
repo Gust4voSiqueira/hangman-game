@@ -1,0 +1,17 @@
+.button-container {
+    background-color: var(--red-800);
+    color: var(--white);
+
+    margin-top: 20px;
+    height: 35px;
+    width: 130px;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.button-container:hover {
+    cursor: pointer;
+    background-color: var(--red-900);
+}
