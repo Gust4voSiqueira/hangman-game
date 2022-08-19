@@ -37,3 +37,18 @@
     margin: 0 auto;
     width: 300px;
 }
+
+@media(max-width: 600px) {
+    .modal {
+        width: 95%;
+        height: 400px;
+    }
+
+    .modal h1 {
+        font-size: 20px;
+    }
+
+    .opcoes {
+        margin: 0 25px;
+    }
+}
