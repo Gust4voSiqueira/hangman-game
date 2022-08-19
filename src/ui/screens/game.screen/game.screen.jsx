@@ -53,7 +53,7 @@ console.log(acertos.split(""));
         <>
             <Header />
             {erros.split("").length === 6 && (<ResultComponent isWin={false} jogarNovamente={jogarNovamente} />)}
-            <ResultComponent isWin={true} jogarNovamente={jogarNovamente} />
+            {acertos.split("").length === palavra.split("").length && (<ResultComponent isWin={true} jogarNovamente={jogarNovamente} />)}
 
             <div className="game-container">
                 <img src={forcaImage} alt="forca" className='forca-image' />
