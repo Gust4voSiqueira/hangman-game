@@ -46,9 +46,6 @@ export function GameScreen() {
         navigate(0)
     }
 
-console.log(palavra);
-console.log(acertos.split(""));
-
     return (
         <>
             <Header />
