@@ -17,6 +17,7 @@ div.header .text-red {
     div.header {
         padding: 0 30px;
         font-size: 10px;
+        min-height: 10vh;
     }
 
     div.header h1.logo {
