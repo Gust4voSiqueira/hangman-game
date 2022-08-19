@@ -3,24 +3,49 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 50px 130px;
+    margin: 0 130px;
+    min-height: 65vh;
 }
 
 .home-container img {
-    width: 300px;
+    width: 30%;
+    height: 15%;
+    margin: auto 0;
 }
 
 .home-container .como-jogar-container {
     max-width: 50%;
+    height: 100%;
+    margin: auto 0;
 }
 
 .home-container .como-jogar-container h1 {
     font-family: Poppins;
-
 }
 
 .home-container .como-jogar-container p {
     font-family: Inter;
     line-height: 30px;
     margin-top: 30px;
+}
+
+@media(max-width: 600px) {
+    .home-container {
+        justify-content: center;
+    
+        margin: 0 30px;
+    }
+
+    .home-container .como-jogar-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin: auto 0;
+    }
+
+    .home-container img {
+        display: none;
+    }
 }

@@ -2,9 +2,25 @@ div.header {
     font-family: Poppins;
     color: var(--black-800);
 
-    padding: 50px 130px;
+    display: flex;
+    align-items: center;
+
+    padding: 0 130px;
+    min-height: 18vh;
 }
 
 div.header .text-red {
     color: var(--red-800);
+}
+
+@media(max-width: 600px) {
+    div.header {
+        padding: 0 30px;
+        font-size: 10px;
+    }
+
+    div.header h1.logo {
+        display: block;
+        margin: 0 auto;
+    }
 }

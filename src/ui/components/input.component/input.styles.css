@@ -2,3 +2,20 @@ span.letras {
     margin: 0 3px;
     font-size: 30px;
 }
+
+.inputComponent-container {
+    position: relative;
+}
+
+.inputComponent-container p {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    font-family: Poppins;
+
+    display: none;
+}
+
+.inputComponent-container p.isExibir {
+    display: block;
+}

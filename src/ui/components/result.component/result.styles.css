@@ -1,0 +1,39 @@
+.result-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.541);
+  } 
+
+.modal {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 10% auto;
+    width: 600px;
+    height: 450px;
+    padding: 10px 0;
+
+    font-family: Poppins;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.meme {
+    margin: 0 auto;
+    width: 300px;
+}
