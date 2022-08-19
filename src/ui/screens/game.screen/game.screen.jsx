@@ -52,7 +52,7 @@ console.log(acertos.split(""));
     return (
         <>
             <Header />
-            {erros.split("").length === 6 && (<ResultComponent isWin={false} jogarNovamente={jogarNovamente} />)}
+            {erros.split("").length === 6 && (<ResultComponent isWin={false} jogarNovamente={jogarNovamente} palavra={palavra} />)}
             {acertos.split("").length === palavra.split("").length && (<ResultComponent isWin={true} jogarNovamente={jogarNovamente} />)}
 
             <div className="game-container">

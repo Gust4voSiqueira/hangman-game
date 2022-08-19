@@ -12,10 +12,4 @@ span.letras {
     bottom: 12px;
     right: 10px;
     font-family: Poppins;
-
-    display: none;
-}
-
-.inputComponent-container p.isExibir {
-    display: block;
 }

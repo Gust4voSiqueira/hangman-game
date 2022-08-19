@@ -16,7 +16,7 @@ function HandleResult({ mensagem, imagem }) {
     )
 }
 
-export function ResultComponent({ isWin, jogarNovamente }) {
+export function ResultComponent({ isWin, jogarNovamente, palavra }) {
     const navigate = useNavigate()
 
     function sairDoJogo() {
@@ -32,7 +32,7 @@ export function ResultComponent({ isWin, jogarNovamente }) {
 
                 {isWin 
                 ? <HandleResult mensagem={"Realmente você é muito bom."} imagem={casemiroFeliz} />
-                : <HandleResult mensagem={"Mas não desista!"} imagem={narutoTriste} />}
+                : <HandleResult mensagem={`A palavra era ${palavra}. Mas não desista!`} imagem={narutoTriste} />}
                 
 
                 <div className="opcoes">

@@ -4,7 +4,7 @@ export function InputComponent({ letra, isExibir }) {
 
     return (
         <div className='inputComponent-container'>
-            <p className={isExibir && "isExibir"}>{letra}</p>
+            <p>{isExibir && letra}</p>
             <span className='letras'>_</span>
         </div>
     )
