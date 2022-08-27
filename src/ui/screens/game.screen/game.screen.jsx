@@ -14,6 +14,7 @@ export function GameScreen() {
     const [ letraInput, setLetraInput ] = useState("")
     const [ erros, setErros ] = useState("")
     const [ acertos, setAcerto ] = useState("")
+    const [ isAcerto, setIsAcerto ] = useState(null)
     const palavra = palavras[indice].palavras[indicePalavra]
     const navigate = useNavigate()
     
@@ -23,6 +24,7 @@ export function GameScreen() {
            
             if(palavra.toLowerCase().indexOf(letraParam.toLowerCase()) < 0 && erros.toLowerCase().indexOf(letraParam.toLowerCase()) < 0) {
                 setErros(erros + letraParam)
+                setIsAcerto(false)
             } else {
                 const repeticaoLetraNaPalavra = palavra.split("").filter(letra => letra.toLowerCase() === letraParam.toLowerCase())
                 var letrasAdicionar = ""
@@ -33,9 +35,14 @@ export function GameScreen() {
 
                 if(!acertos.split("").some(letra => letra.toLowerCase() === letraParam.toLowerCase())) {
                     setAcerto(acertos + letrasAdicionar);
+                    setIsAcerto(true)
                 }
                 
             }
+
+            setTimeout(() => {
+                setLetraInput("")
+            }, 300);
         }
         
         else 
@@ -70,6 +77,7 @@ export function GameScreen() {
                     <label htmlFor="letra">
                         Letra: 
                         <input autoComplete='off' type="text" value={letraInput} name='letra' className='letra-input' onChange={(e) => verificaPalavra(e.target.value)} />
+                        <div className={`resultado-palavra ${isAcerto ? "verde" : "vermelho"}`}></div>
                     </label>
 
                     <div className='letras-erradas-container'>

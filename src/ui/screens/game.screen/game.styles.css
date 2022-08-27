@@ -162,6 +162,22 @@ div.perna-direita {
     display: none;
 }
 
+.resultado-palavra {
+    color: var(--black-800);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.verde {
+    background-color: var(--green-700);
+}
+
+.vermelho {
+    background-color: var(--red-800);
+}
+
 @media(max-width: 600px) {
     .game-container {
         flex-direction: column;
@@ -173,8 +189,9 @@ div.perna-direita {
     }
 
     .forca-image {
-        width: 200px;
-        margin-right: 50px;
+        width: 160px;
+        margin-left: 25px;
+        margin-top: 40px;
     }
 
     div.forca {
@@ -185,42 +202,48 @@ div.perna-direita {
 
     div.cabeca {
         position: absolute;
-        padding: 20px;
-        width: 30px;
-        top: 30px;
+        padding: 13px;
+        width: 10px;
+        top: 62px;
+        left: 7px;
     }
     
     div.braco-esquerdo {
-        width: 50px;
-        left: -21px;
-        top: 88px;
+        width: 30px;
+        left: -5px;
+        top: 100.5px;
     }
     
     div.braco-direito {
-        width: 50px;
-        left: 14px;
-        top: 88px;
+        width: 30px;
+        left: 17px;
+        top: 100px;
     }
     
     div.tronco {
-        height: 70px;
+        height: 50px;
         left: 20px;
-        top: 72px;
+        top: 89px;
     }
     
     div.perna-esquerda {
-        width: 50px;
-        left: -21px;
-        top: 158px;
+        width: 30px;
+        left: -4px;
+        top: 147px;
     }
     
     div.perna-direita {
-        width: 50px;
-        left: 14px;
-        top: 158px;
+        width: 30px;
+        left: 16px;
+        top: 147px;
     }
 
     .palavra-container span, label {
         margin-top: 0;
+    }
+
+    .palavra-container .letras-erradas-container {
+        height: 150px;
+        width: 250px;
     }
 }
