@@ -1,70 +1,48 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hangman Game 🎮
 
-## Available Scripts
+O Hangman Game é uma aplicação web clássica que desafia os jogadores a adivinhar uma palavra oculta, letra por letra, antes que o enforcado seja completamente desenhado. Este jogo foi desenvolvido usando a biblioteca ReactJS e oferece uma experiência divertida e educativa para jogadores de todas as idades.
 
-In the project directory, you can run:
+Neste readme, você encontrará informações sobre como configurar e executar o projeto, bem como uma visão geral das funcionalidades.
 
-### `npm start`
+## Como Jogar
+- A aplicação escolherá aleatoriamente uma palavra oculta.
+- Você verá a palavra oculta como uma série de traços, representando as letras que você precisa adivinhar.
+- Clique em uma letra no teclado para fazer uma tentativa.
+- Se a letra estiver na palavra oculta, ela será revelada na posição correta.
+- Se a letra não estiver na palavra, uma parte do enforcado será desenhada.
+- Continue fazendo tentativas até adivinhar a palavra ou até que o enforcado seja completamente desenhado.
+- Se você adivinhar a palavra antes que o enforcado seja concluído, você vence!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Como Executar o Projeto Localmente:
+### Pré-requisitos
+Antes de executar o projeto, é necessário ter o seguinte software instalado em seu sistema:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Node.js](https://nodejs.org/en) - Certifique-se de que o Node.js está instalado em sua máquina.
 
-### `npm test`
+### Configuração do Projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Siga as etapas abaixo para configurar o projeto em seu ambiente local:
 
-### `npm run build`
+Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+````
+git clone https://github.com/Gust4voSiqueira/hangman-game.git
+````
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navegue até o diretório do projeto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Instale as dependências do projeto:
 
-### `npm run eject`
+````
+npm install
+````
+**Executando o Projeto**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Após configurar o projeto, você pode executá-lo usando o npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+````
+npm run dev
+````
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pronto! O projeto estará configurado e rodando localmente.
