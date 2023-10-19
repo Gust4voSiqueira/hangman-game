@@ -42,7 +42,7 @@ npm install
 Após configurar o projeto, você pode executá-lo usando o npm:
 
 ````
-npm run dev
+npm start
 ````
 
 Pronto! O projeto estará configurado e rodando localmente.
