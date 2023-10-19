@@ -2,7 +2,7 @@ import { Button } from '../button.component/button.component'
 import './result.styles.css'
 
 import narutoTriste from '../../../Assets/images/narutoTriste.png'
-import casemiroFeliz from '../../../Assets/images/casemiroFeliz.webp'
+import narutoFeliz from '../../../Assets/images/narutofeliz.webp'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -31,7 +31,7 @@ export function ResultComponent({ isWin, jogarNovamente, palavra }) {
                 : <h1>Poxa...<br/>Pena que você perdeu!</h1>}
 
                 {isWin 
-                ? <HandleResult mensagem={"Realmente você é muito bom."} imagem={casemiroFeliz} />
+                ? <HandleResult mensagem={"Realmente você é muito bom."} imagem={narutoFeliz} />
                 : <HandleResult mensagem={`A palavra era ${palavra}. Mas não desista!`} imagem={narutoTriste} />}
                 
 
